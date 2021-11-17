@@ -206,7 +206,7 @@ export default function Home() {
             </div>
             <div
               id="alphabet"
-              className="grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12"
+              className="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-12"
             >
               {state.alphabet.map((alpha) => (
                 <button

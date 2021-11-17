@@ -60,18 +60,6 @@ li {
   color: #fff;
 }
 
-@media (max-width: 960px) {
-  li {
-    margin: 6px 6px;
-  }
-}
-
-@media (max-width: 600px) {
-  li {
-    margin: 2px 2px;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   li {
     border-bottom: 2px solid #fff;
