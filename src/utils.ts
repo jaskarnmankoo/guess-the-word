@@ -315,20 +315,3 @@ export const PHRASALVERBS = [
 export const ROUTES = {
   HOME: '/'
 };
-
-export const getRandom = (words: string[]): string => {
-  const randomNum = Math.floor(Math.random() * words.length);
-
-  return words[randomNum];
-};
-
-export const splitLetters = (word: string): string[] => {
-  const s = word.toUpperCase();
-  const split = [];
-
-  for (let i = 0; i < s.length; i++) {
-    split.push(s.charAt(i));
-  }
-
-  return split;
-};
