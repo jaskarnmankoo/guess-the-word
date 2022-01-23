@@ -9,6 +9,9 @@
   p {
     @apply text-lg;
   }
+  li {
+    @apply border-b-2 border-black p-2 m-2 w-8 text-2xl dark:border-white;
+  }
   main {
     @apply w-11/12 mt-12 mx-auto;
   }
@@ -22,62 +25,4 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-}
-
-li {
-  border-bottom: 2px solid #000;
-  border-radius: 2px;
-  font-size: 2em;
-  margin: 8px 8px;
-}
-
-#alphabet button {
-  border: 2px solid #000;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-#word {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-}
-
-#word-container {
-  display: flex;
-  justify-content: center;
-}
-
-.disabled {
-  background-color: #f3f4f5;
-}
-
-.foundedLetter {
-  color: #000;
-}
-
-.letter {
-  color: #fff;
-}
-
-@media (prefers-color-scheme: dark) {
-  li {
-    border-bottom: 2px solid #fff;
-  }
-
-  #alphabet button {
-    border: 2px solid #fff;
-  }
-
-  .disabled {
-    background-color: #000;
-  }
-
-  .foundedLetter {
-    color: #fff;
-  }
-
-  .letter {
-    color: #202124;
-  }
 }

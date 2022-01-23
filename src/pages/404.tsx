@@ -2,9 +2,11 @@ import * as React from 'react';
 
 import { Link } from 'gatsby';
 
-import SearchEngineOptimization from '../components/SearchEngineOptimization';
+import SearchEngineOptimization from '../components/common/SearchEngineOptimization';
 
-export default function NotFound() {
+import { ROUTES } from '../utils';
+
+export default function NotFound(): JSX.Element {
   return (
     <>
       <SearchEngineOptimization title="Oops..." />
@@ -12,7 +14,7 @@ export default function NotFound() {
         <h1>Guess the Word</h1>
         <h2 className="text-xl bold">Page not found!</h2>
         <p>Oops! The page you are looking for has been removed or relocated.</p>
-        <Link to="/" className="underline">
+        <Link className="underline" to={ROUTES.HOME}>
           Go Back
         </Link>
       </main>
